@@ -1,4 +1,4 @@
-# DrumKit
-## A simple website to play drumkit 
+# Play DrumKit
+
 
 ![Sample-image](images/git.png)
