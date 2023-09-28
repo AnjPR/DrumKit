@@ -1,13 +1,30 @@
-body {
+/*body {
   background-size: cover; 
+  
+    background-image: url("images\bg.jpeg");
+    background-color: #cccccc;
+
     background-color: rgb(47 39 39);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+}*/
+body {
+  /* Set background image URL */
+  background-image: url("bg.jpg");
+
+  /* Set background properties */
+  background-color: #cccccc; 
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  text-align: center; 
+
+
 }
 h1 {
-  font-size: 5rem;
+  font-size: 10rem;
   color: #DBEDF3;
   font-family: "emoji";
   text-shadow: 3px 0 #380112;
