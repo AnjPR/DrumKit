@@ -13,6 +13,7 @@ for ( var i = 0; i <document.querySelectorAll(".drum").length; i++ ){
 function clickAudio(level){
     document.querySelectorAll(".drum")[level].addEventListener("click",function() {
         playAudio(level);
+        button_animation(level);
     });
 
 }
@@ -20,7 +21,8 @@ function clickAudio(level){
 function keyAudio (level) {
     document.addEventListener("keypress", function (event) {
       if (event.key.toLowerCase() === keys[level]) {
-          playAudio(level);
+       playAudio(level);
+       button_animation(level.key);
       }
     });
 }
@@ -28,4 +30,14 @@ function keyAudio (level) {
 function playAudio(level){
     var audio = new Audio( 'sounds/' + myArray[level] + '.mp3');
     audio.play();
+
+}
+
+function button_animation(currentkey){
+    var anime =document.querySelector("."+currentkey);
+    anime.classList.add("pressed");
+
+    setTimeout(function(){
+        anime.classList.remove(".pressed");
+    },100);    
 }
